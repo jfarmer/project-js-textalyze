@@ -213,7 +213,11 @@ This is a "stretch approach," which means it's absolutely *not* necessary for yo
 
 ### [v1.2] Pretty Histograms <!-- omit in toc -->
 
-Print out a histogram of letter frequencies, a la the original screenshot.
+Print out a histogram of letter frequencies that looks something like the following:
+
+![Letter frequencies in Moby Dick][img-moby-dick-screenshot]
+
+The goal is to produce a useful, well-designed output. It doesn't have to look *identical* to the above output.
 
 **Hint:** You can use the frequency for each item as a way to scale the length of the histogram.
 
