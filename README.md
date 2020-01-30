@@ -173,7 +173,7 @@ sanitize('HEY: ThIs Is hArD tO rEaD!') // => 'hey: this is hard to read!'
 Lucky for us, JavaScript comes with a built-in function to help us:
 [String.prototype.toLowerCase][docs-javascript-string-tolowercase].
 
-Integrate this function into current program so that the `Map` of results
+Integrate this function into current program so that the `Object` of results
 contains, e.g.,
 
 ```javascript
@@ -199,7 +199,7 @@ report on the most commonly-used tags in an HTML document, we'd want to *keep*
 the tags but remove the text.
 
 In our case, we've designed our program such that it treats upper-case letters
-and lower-case letters as distinct letters, i.e., our results `Map` might
+and lower-case letters as distinct letters, i.e., our results `Object` might
 contain
 
 ```javascript
@@ -261,11 +261,11 @@ and `banana`, with a space denoting the separation between each argument.
 ## [v1.1] Basic Frequency Statistics
 
 Using hard-coded examples, write a function that takes an `Array` containing
-arbitrary and possibly duplicated entries as input and returns a `Map`
+arbitrary and possibly duplicated entries as input and returns a `Object`
 containing item/frequency pairs. Print out those pairs in a sensible way.
 
 That is, if the input has 100 entries and 20 of the are letter "a" then then
-resultant `Map` should have
+returned `Object` should have
 
 ```javascript
 { 'a': 0.20 }
@@ -273,7 +273,7 @@ resultant `Map` should have
 
 ### Stretch Approach
 
-You've already written a function that takes an `Array` and returns a `Map`
+You've already written a function that takes an `Array` and returns a `Object`
 containing entry/count pairs and you'll need these counts (one way or another)
 in order to calculate the overall frequency.  If you want to stretch yourself,
 try writing your "frequency statistics" function in a way that makes use of your
