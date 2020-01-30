@@ -1,0 +1,35 @@
+{
+  "name": "template-javascript",
+  "version": "0.0.0",
+  "description": "JavaScript template",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jsdoc": "^3.6.3"
+  },
+  "scripts": {
+    "docs": "npx jsdoc -c ./.jsdoc.conf.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfarmer/template-javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "exercises"
+  ],
+  "author": "Jesse Farmer <jesse@20bits.com>",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/jfarmer/template-javascript/issues"
+  },
+  "homepage": "https://github.com/jfarmer/template-javascript#readme"
+}
