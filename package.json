@@ -19,7 +19,7 @@
     "docs": "npx jsdoc -c ./.jsdoc.conf.json",
     "test": "npx jest",
     "lint": "npx eslint .",
-    "start": "node textalyze,js"
+    "start": "node textalyze.js"
   },
   "repository": {
     "type": "git",
