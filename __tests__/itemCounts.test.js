@@ -38,4 +38,10 @@ describe('itemCount', () => {
 
     expect(itemCounts(input)).toEqual(expectedOutput);
   });
+  /*
+  test('string decomposition array:', () => {
+    const input = 'Hello, this is a string. It contains punctuations! And ~other~ things...?';
+
+  });
+  */
 });

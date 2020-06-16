@@ -1,18 +1,22 @@
 // This is the base code for v0.1 of our JavaScript text analyzer.
 // Visit https://github.com/jfarmer/project-js-textalyze to see what to do.
 
-// Send a message in Slack if you're stuck or unsure what to do.  These
-// comments are here to help you, but please delete them as you go along.
-
-// Open lib/itemCounts.js to get started on the first iteration.
 let itemCounts = require('./lib/itemCounts');
+let sanitize = require('./lib/sanitize');
+let stringChars = require('./lib/stringToArray');
+let fs = require('fs');
+let frequencies = require('./lib/frequencies');
 
-let sampleInput = ['a', 'a', 'a', 'b', 'b', 'c'];
+let text = fs.readFileSync(`${process.argv.slice(2,3)}`, 'utf8');
+//let text = fs.readFileSync('./sample_data/tale-of-two-cities.txt', 'utf8');
+let cleanedStr = sanitize(text);
+let characters = stringChars(cleanedStr);
+let freqs = frequencies(characters);
+let counts = itemCounts(characters);
 
-let counts = itemCounts(sampleInput);
+console.log(freqs);
 
-// Object.keys returns an array of keys for the given object.
-// See https://javascript.info/keys-values-entries
+
 for (let item of Object.keys(counts)) {
   let count = counts[item];
 
