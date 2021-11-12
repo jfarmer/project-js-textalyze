@@ -1,7 +1,7 @@
 {
   "name": "project-js-textalyze",
   "version": "0.1.0",
-  "description": "JavaScript template",
+  "description": "JavaScript Project: Text Analysis & Statistics",
   "main": "textalyze.js",
   "devDependencies": {
     "eslint": "^7.12.1",
