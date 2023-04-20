@@ -5,7 +5,8 @@
     "commonjs": true,
     "es6": true,
     "node": true,
-    "jquery": true
+    "jquery": true,
+    "jest/globals": true
   },
   "extends": [
     "plugin:json/recommended",
@@ -22,6 +23,9 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
+  "plugins": [
+    "jest"
+  ],
   "rules": {
     "comma-dangle": [
       "error",
