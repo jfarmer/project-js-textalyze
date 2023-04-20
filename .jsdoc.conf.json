@@ -8,7 +8,7 @@
   ],
   "source": {
     "include": [
-      "exercises"
+      "."
     ],
     "excludePattern": "node_modules"
   }
